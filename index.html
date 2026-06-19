@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFuturo | Desenvolvimento Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">🌱 EcoFuturo</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#calculadora">A Tua Pegada</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>O Futuro Começa Agora</h1>
+        <p>O desenvolvimento sustentável procura suprir as necessidades do presente sem comprometer as gerações futuras.</p>
+        <a href="#pilares" class="btn">Saber Mais</a>
+    </section>
+
+    <section id="pilares" class="pilares">
+        <h2>Os 3 Pilares da Sustentabilidade</h2>
+        <div class="grid-pilares">
+            <div class="card">
+                <span class="emoji">🌍</span>
+                <h3>Ambiental</h3>
+                <p>Preservação do ecossistema, redução de resíduos, conservação de florestas e uso de energias renováveis.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">👥</span>
+                <h3>Social</h3>
+                <p>Garantia de igualdade, saúde, educação de qualidade, direitos humanos e bem-estar para as comunidades.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">💼</span>
+                <h3>Económico</h3>
+                <p>Crescimento financeiro equilibrado, promovendo a produção e o consumo conscientes sem destruir os recursos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calculadora-section">
+        <div class="calc-container">
+            <h2>Calculadora Ecológica Rápida</h2>
+            <p>Descobre o impacto do teu transporte diário no planeta!</p>
+            
+            <label for="transporte">Qual é o teu transporte principal?</label>
+            <select id="transporte">
+                <option value="carro">Carro (Gasolina/Gasóleo)</option>
+                <option value="eletrico">Carro Elétrico</option>
+                <option value="autocarro">Transportes Públicos (Autocarro/Comboio)</option>
+                <option value="bicicleta">Bicicleta ou A Pé</option>
+            </select>
+
+            <button id="btn-calcular">Calcular Impacto</button>
+            <div id="resultado" class="resultado-escondido"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EcoFuturo. Criado com foco no amanhã.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
